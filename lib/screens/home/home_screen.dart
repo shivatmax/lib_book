@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lithabit/widgets/keep_reading_section.dart';
-import 'package:lithabit/widgets/last_opened_book.dart';
 import '../../widgets/filters/filter_row_section.dart';
 import '../../widgets/filters/search_bar.dart';
+import '../../widgets/keep_reading_section.dart';
+import '../../widgets/last_opened_book.dart';
 
 
 class HomeScreen extends StatelessWidget {

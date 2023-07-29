@@ -1,5 +1,5 @@
-name: lithabit
-description: A library books app.
+name: lib_book
+description: A library books
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1

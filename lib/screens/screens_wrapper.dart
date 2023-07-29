@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lithabit/screens/home/home_screen.dart';
-import 'package:lithabit/screens/market/market_screen.dart';
+
+import 'home/home_screen.dart';
+import 'market/market_screen.dart';
 
 
 class ScreensWrapper extends StatefulWidget {
