@@ -9,19 +9,16 @@ class FilterRowSection extends StatefulWidget {
 
 class _FilterRowSectionState extends State<FilterRowSection> {
   final List<String> filterOptions = [
-    'Discover',
-    'Romantic',
-    'Author',
-    'Genres',
-    'Health',
-    'Science',
-    'Technology',
+    'Computer Science',
+    'Forensic Science',
+    'Business Administration',
+    'Special',
   ];
   String? selectedFilter;
   @override
   void initState() {
     super.initState();
-    filterByCategory("Discover");
+    filterByCategory("Computer Science");
   }
 
   Future<void> filterByCategory(String category) async {
@@ -41,9 +38,9 @@ class _FilterRowSectionState extends State<FilterRowSection> {
             child: Text(
               filter,
               style: TextStyle(
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w900,
                   fontSize: 22,
-                  color: Colors.grey[400]),
+                  color: Colors.grey[800]),
             ),
           );
         }).toList(),

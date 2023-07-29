@@ -5,16 +5,6 @@ List<Book> getBooksByType(Category category) {
   return allBooks.where((book) => book.category == category).toList();
 }
 
-List<Book> getBooksByPurchased() {
-  List<Book> allBooks = getAllBooks();
-  return allBooks.where((book) => book.isPurchased == true).toList();
-}
-
-List<Book> getBooksByFree() {
-  List<Book> allBooks = getAllBooks();
-  return allBooks.where((book) => book.isPurchased == true).toList();
-}
-
 List<Book> getBooksByOpenPage(int page) {
   List<Book> allBooks = getAllBooks();
   return allBooks.where((book) => book.lastOpenPage >= page).toList();
@@ -40,42 +30,8 @@ List<Book> getAllBooks() {
       lastOpenPage: 50,
       totalXP: 100,
     ),
-    Book(
-      title: 'The Lean Startup',
-      category: Category.business,
-      isbn: '9780307887894',
-      price: 12.99,
-      isFree: false,
-      isPurchased: false,
-      description:
-          'An innovative approach to building and growing startups, focusing on rapid experimentation, validated learning, and iterative product development.',
-      rating: 4.8,
-      pages: 336,
-      yearRelease: 2020,
-      authorName: 'Author 2',
-      imageUrl:
-          'https://m.media-amazon.com/images/I/51mFoFmu0EL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg',
-      lastOpenPage: 0,
-      totalXP: 240,
-    ),
-    Book(
-      category: Category.comics,
-      price: 0.00,
-      isFree: true,
-      isPurchased: false,
-      yearRelease: 2020,
-      imageUrl:
-          'https://m.media-amazon.com/images/I/513lEQAd06L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg',
-      lastOpenPage: 0,
-      totalXP: 198,
-      title: 'The Power of Now',
-      isbn: '9781577314806',
-      authorName: 'Eckhart Tolle',
-      description:
-          'A spiritual guide to living in the present moment and finding enlightenment, offering practical advice and insights for achieving inner peace and happiness.',
-      rating: 4.6,
-      pages: 236,
-    ),
+
+
     Book(
       title: 'Book 4',
       category: Category.health,
@@ -93,23 +49,7 @@ List<Book> getAllBooks() {
       lastOpenPage: 0,
       totalXP: 0,
     ),
-    Book(
-      title: 'Book 5',
-      category: Category.fantasy,
-      isbn: '987654321',
-      price: 12.99,
-      isFree: false,
-      isPurchased: false,
-      description: 'Description of Book 2',
-      rating: 3.8,
-      yearRelease: 2020,
-      pages: 300,
-      authorName: 'Author 2',
-      imageUrl:
-          'https://m.media-amazon.com/images/I/41pTqRlersL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg',
-      lastOpenPage: 0,
-      totalXP: 0,
-    ),
+
     Book(
       title: 'Book 6',
       category: Category.cooking,
@@ -144,23 +84,7 @@ List<Book> getAllBooks() {
       lastOpenPage: 0,
       totalXP: 0,
     ),
-    Book(
-      title: 'Book 8',
-      category: Category.philosophy,
-      isbn: '987654321',
-      price: 12.99,
-      isFree: false,
-      isPurchased: false,
-      description: 'Description of Book 2',
-      rating: 3.8,
-      yearRelease: 2020,
-      pages: 300,
-      authorName: 'Author 2',
-      imageUrl:
-          'https://m.media-amazon.com/images/I/416vxEWfI6L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg',
-      lastOpenPage: 0,
-      totalXP: 0,
-    ),
+
     Book(
       title: 'Book 9',
       category: Category.science,
@@ -178,23 +102,7 @@ List<Book> getAllBooks() {
       lastOpenPage: 0,
       totalXP: 0,
     ),
-    Book(
-      title: 'Book 9',
-      category: Category.technology,
-      isbn: '987654321',
-      price: 12.99,
-      isFree: false,
-      isPurchased: false,
-      description: 'Description of Book 2',
-      rating: 3.8,
-      yearRelease: 2020,
-      pages: 300,
-      authorName: 'Author 2',
-      imageUrl:
-          'https://m.media-amazon.com/images/I/51CLYm-FruL._SX320_BO1,204,203,200_.jpg',
-      lastOpenPage: 0,
-      totalXP: 0,
-    ),
+
     Book(
       title: 'Book 10',
       category: Category.travel,
@@ -365,23 +273,7 @@ List<Book> getAllBooks() {
       lastOpenPage: 0,
       totalXP: 0,
     ),
-    Book(
-      title: 'Book 20',
-      category: Category.artAndLit,
-      isbn: '987654321',
-      price: 12.99,
-      isFree: false,
-      isPurchased: true,
-      description: 'Description of Book 2',
-      rating: 3.8,
-      yearRelease: 2020,
-      pages: 300,
-      authorName: 'Author 2',
-      imageUrl:
-          'https://m.media-amazon.com/images/I/41ORbvdT5ZL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg',
-      lastOpenPage: 0,
-      totalXP: 0,
-    ),
+
     Book(
       title: 'Book 21',
       category: Category.business,
@@ -399,57 +291,9 @@ List<Book> getAllBooks() {
       lastOpenPage: 0,
       totalXP: 0,
     ),
-    Book(
-      title: 'Book 22',
-      category: Category.history,
-      isbn: '987654321',
-      price: 12.99,
-      isFree: false,
-      isPurchased: true,
-      description: 'Description of Book 2',
-      rating: 3.8,
-      yearRelease: 2020,
-      pages: 300,
-      authorName: 'Author 2',
-      imageUrl:
-          'https://m.media-amazon.com/images/I/41a2cF5TwUL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg',
-      lastOpenPage: 0,
-      totalXP: 0,
-    ),
-    Book(
-      title: 'Book 23',
-      category: Category.philosophy,
-      isbn: '987654321',
-      price: 12.99,
-      isFree: false,
-      isPurchased: false,
-      description: 'Description of Book 2',
-      rating: 3.8,
-      yearRelease: 2020,
-      pages: 300,
-      authorName: 'Author 2',
-      imageUrl:
-          'https://m.media-amazon.com/images/I/41tseIR-CSL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg',
-      lastOpenPage: 0,
-      totalXP: 0,
-    ),
-    Book(
-      title: 'Book 24',
-      category: Category.religion,
-      isbn: '987654321',
-      price: 12.99,
-      isFree: false,
-      isPurchased: true,
-      description: 'Description of Book 2',
-      rating: 3.8,
-      yearRelease: 2020,
-      pages: 300,
-      authorName: 'Author 2',
-      imageUrl:
-          'https://m.media-amazon.com/images/I/51qtraYnQOL._SX311_BO1,204,203,200_.jpg',
-      lastOpenPage: 0,
-      totalXP: 0,
-    ),
+
+
+
     Book(
       title: 'Book 25',
       category: Category.selfHelp,

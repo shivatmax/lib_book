@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lithabit/screens/home/sections/all_purchased_books.dart';
 import 'package:lithabit/widgets/keep_reading_section.dart';
 import 'package:lithabit/widgets/last_opened_book.dart';
+import '../../widgets/filters/filter_row_section.dart';
+import '../../widgets/filters/search_bar.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -11,7 +13,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Lit Habit",
+          "Library",
           style: Theme.of(context).textTheme.labelLarge,
         ),
       ),
@@ -20,9 +22,13 @@ class HomeScreen extends StatelessWidget {
           padding: EdgeInsets.all(16.0),
           child: Column(
             children: [
+
               LastOpenedBook(),
-              KeepReadingSection(),
-              AllPurchasedBooks(),
+              KeepReadingSection(text: "Favorite Books",),
+              SizedBox(height: 24),
+              KeepReadingSection(text: "Popular Books",),
+              SizedBox(height: 24),
+              KeepReadingSection(text: "History",),
             ],
           ),
         ),

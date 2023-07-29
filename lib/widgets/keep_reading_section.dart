@@ -5,7 +5,9 @@ import '../models/books.dart';
 import 'book_cover_3d.dart';
 
 class KeepReadingSection extends StatelessWidget {
-  const KeepReadingSection({Key? key}) : super(key: key);
+  final String text;
+
+  const KeepReadingSection({Key? key, required this.text}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,7 @@ class KeepReadingSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Keep reading",
+          text,
           style: Theme.of(context).textTheme.titleSmall,
         ),
         SingleChildScrollView(

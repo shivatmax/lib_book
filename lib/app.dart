@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lit Habit',
+      title: 'Library',
       theme: customTheme,
       home: Scaffold(
         body: _isLoading ? _buildLoadingScreen() : const ScreensWrapper(),
@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
   Widget _buildLoadingScreen() {
     return Center(
       child: Image.asset(
-        'assets/loader.gif',
+        'assets/welcome-5.gif',
         fit: BoxFit.contain,
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,

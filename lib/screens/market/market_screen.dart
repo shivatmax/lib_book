@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lithabit/screens/market/filters/filter_row_section.dart';
-import 'package:lithabit/screens/market/suggestions/discount_books.dart';
-import 'package:lithabit/screens/market/suggestions/popular_books.dart';
-import 'package:lithabit/screens/market/suggestions/trend_books.dart';
+import '../../widgets/filters/filter_row_section.dart';
+import '../../widgets/filters/search_bar.dart';
+import '../../widgets/keep_reading_section.dart';
 
-import 'filters/search_bar.dart';
+
 
 class MarketScreen extends StatelessWidget {
   const MarketScreen({Key? key}) : super(key: key);
@@ -14,7 +13,7 @@ class MarketScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Market",
+          "All In One",
           style: Theme.of(context).textTheme.labelLarge,
         ),
       ),
@@ -27,11 +26,12 @@ class MarketScreen extends StatelessWidget {
               SizedBox(height: 24),
               FilterRowSection(),
               SizedBox(height: 24),
-              TrendBooks(),
+              KeepReadingSection(text: "Recently Added",),
               SizedBox(height: 24),
-              PopularBooks(),
+              KeepReadingSection(text: "Popular Books",),
               SizedBox(height: 24),
-              DiscountBooks(),
+              KeepReadingSection(text: "Books in Syllabus",),
+
             ],
           ),
         ),

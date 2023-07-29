@@ -32,7 +32,7 @@ flutter:
   assets:
     - assets/images/
     - assets/harry_potter.pdf
-    - assets/loader.gif
+    - assets/welcome-5.gif
 
 flutter_icons:
   android: true
